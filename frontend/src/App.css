@@ -1,0 +1,64 @@
+/* Droomvriendjes Custom Styles */
+
+* {
+  scroll-behavior: smooth;
+}
+
+.App {
+  min-height: 100vh;
+}
+
+/* Hide platform branding */
+#emergent-badge,
+[id*="emergent"],
+a[href*="emergent.sh"] {
+  display: none !important;
+  visibility: hidden !important;
+  opacity: 0 !important;
+  position: absolute !important;
+  left: -9999px !important;
+  pointer-events: none !important;
+}
+
+/* Smooth transitions for interactive elements */
+button {
+  transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+}
+
+button:hover {
+  transform: translateY(-2px);
+}
+
+button:active {
+  transform: translateY(0);
+}
+
+/* Card hover effects */
+.hover\:shadow-xl:hover {
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+}
+
+/* Smooth image transitions */
+img {
+  transition: transform 0.3s ease;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f5efe8;
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #8B7355;
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #6d5a45;
+}
